@@ -1,0 +1,10 @@
+## Interface: 11302
+## Title: Quest Completist Classic
+## Version: 1.0.0
+## Author: Troy L. Marshall
+## Notes: My rewrite of the QuestCompletist AddOn
+## DefaultState: disabled
+## SavedVariables: QuestCompletistClassic_Settings
+
+QuestCompletistClassic.lua
+QuestCompletistClassic.xml
