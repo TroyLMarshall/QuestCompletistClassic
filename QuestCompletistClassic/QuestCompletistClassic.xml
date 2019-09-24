@@ -36,6 +36,7 @@
 		<Scripts>
 			<OnLoad>
 				self:RegisterEvent("PLAYER_LOGIN")
+				self:RegisterForClicks("LeftButtonUp", "RightButtonUp")
 			</OnLoad>
 			<OnEvent>
 				QuestCompletistClassic_MinimapButton_Reposition()
@@ -49,8 +50,16 @@
 				GameTooltip:Hide()
 			</OnLeave>
 			<OnClick>
-				QuestCompletistClassic_MinimapButton_OnClick()
+				if button == "LeftButton" then
+					QuestCompletistClassic_MinimapButton_OnClick()
+				end
 			</OnClick>
+			<OnMouseUp>
+				if button == "RightButton" then
+					InterfaceOptionsFrame_OpenToCategory(QuestCompletistClassic_OptionsFrame);
+					InterfaceOptionsFrame_OpenToCategory(QuestCompletistClassic_OptionsFrame);
+				end
+			</OnMouseUp>
 		</Scripts>
 		<HighlightTexture file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight" alphaMode="ADD" />
 	</Button>

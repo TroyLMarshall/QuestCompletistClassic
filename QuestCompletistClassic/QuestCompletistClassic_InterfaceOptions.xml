@@ -1,0 +1,29 @@
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="QuestCompletistClassic_InterfaceOptions.lua" />
+	<Frame name="QuestCompletistClassic_OptionsFrame" hidden="true">
+		<Size>
+			<AbsDimension x="378" y="436" />
+		</Size>
+		<Anchors>
+			<Anchor point="TOPLEFT">
+				<Offset>
+					<AbsDimension x="100" y="-150" />
+				</Offset>
+			</Anchor>
+		</Anchors>
+		<Layers>
+			<Layer level="OVERLAY">
+				<FontString name="title" inherits="GameFontNormalLarge" text="Quest Completist Classic - Option Settings" justifyH="LEFT">
+					<Anchors>
+						<Anchor point="TOPLEFT" relativeTo="$parent" x="3" y="-3" />
+					</Anchors>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnLoad>
+				QuestCompletistClassic_OptionsFrame_OnLoad(self)
+			</OnLoad>
+		</Scripts>
+	</Frame>
+</Ui>

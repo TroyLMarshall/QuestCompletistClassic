@@ -8,3 +8,5 @@
 
 QuestCompletistClassic.lua
 QuestCompletistClassic.xml
+QuestCompletistClassic_InterfaceOptions.lua
+QuestCompletistClassic_InterfaceOptions.xml

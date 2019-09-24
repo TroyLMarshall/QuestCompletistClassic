@@ -11,6 +11,13 @@
     <OutputPath>.</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="QuestCompletistClassic_InterfaceOptions.lua">
+      <SubType>Code</SubType>
+      <DependentUpon>QuestCompletistClassic_InterfaceOptions.xml</DependentUpon>
+    </Content>
+    <Content Include="QuestCompletistClassic_InterfaceOptions.xml">
+      <SubType>Frame</SubType>
+    </Content>
     <Content Include="QuestCompletistClassic.lua">
       <SubType>Code</SubType>
       <DependentUpon>QuestCompletistClassic.xml</DependentUpon>
